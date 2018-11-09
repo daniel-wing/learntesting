@@ -1,0 +1,111 @@
+]0;~/OneDrive/Mac/Projects/LearnOriginal[?1034hDaniels-MacBook-Air:LearnOriginal danielwing$ [KDaniels-MacBook-Air:LearnOriginal danielwing$ pwd
+/Users/danielwing/OneDrive/Mac/Projects/LearnOriginal
+]0;~/OneDrive/Mac/Projects/LearnOriginalDaniels-MacBook-Air:LearnOriginal danielwing$ hugo version [flags]
+Hugo Static Site Generator v0.48/extended darwin/amd64 BuildDate: unknown
+]0;~/OneDrive/Mac/Projects/LearnOriginalDaniels-MacBook-Air:LearnOriginal danielwing$ -h
+bash: -h: command not found
+]0;~/OneDrive/Mac/Projects/LearnOriginalDaniels-MacBook-Air:LearnOriginal danielwing$ hugo -h
+hugo is the main command, used to build your Hugo site.
+
+Hugo is a Fast and Flexible Static Site Generator
+built with love by spf13 and friends in Go.
+
+Complete documentation is available at http://gohugo.io/.
+
+Usage:
+  hugo [flags]
+  hugo [command]
+
+Available Commands:
+  benchmark   Benchmark Hugo by building a site a number of times.
+  check       Contains some verification checks
+  config      Print the site configuration
+  convert     Convert your content to different formats
+  env         Print Hugo version and environment info
+  gen         A collection of several useful generators.
+  help        Help about any command
+  import      Import your site from others.
+  list        Listing out various types of content
+  new         Create new content for your site
+  server      A high performance webserver
+  version     Print the version number of Hugo
+
+Flags:
+  -b, --baseURL string          hostname (and path) to the root, e.g. http://spf13.com/
+  -D, --buildDrafts             include content marked as draft
+  -E, --buildExpired            include expired content
+  -F, --buildFuture             include content with publishdate in the future
+      --cacheDir string         filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/
+      --canonifyURLs            (deprecated) if true, all relative URLs will be canonicalized using baseURL
+      --cleanDestinationDir     remove files from destination not found in static directories
+      --config string           config file (default is path/config.yaml|json|toml)
+  -c, --contentDir string       filesystem path to content directory
+      --debug                   debug output
+  -d, --destination string      filesystem path to write files to
+      --disableKinds strings    disable different kind of pages (home, RSS etc.)
+      --enableGitInfo           add Git revision, date and author info to the pages
+      --forceSyncStatic         copy all files when static is changed.
+      --gc                      enable to run some cleanup tasks (remove unused cache files) after the build
+  -h, --help                    help for hugo
+      --i18n-warnings           print missing translations
+      --ignoreCache             ignores the cache directory
+  -l, --layoutDir string        filesystem path to layout directory
+      --log                     enable Logging
+      --logFile string          log File path (if set, logging enabled automatically)
+      --minify                  minify any supported output format (HTML, XML etc.)
+      --noChmod                 don't sync permission mode of files
+      --noTimes                 don't sync modification time of files
+      --pluralizeListTitles     (deprecated) pluralize titles in lists using inflect (default true)
+      --preserveTaxonomyNames   (deprecated) preserve taxonomy names as written ("Gérard Depardieu" vs "gerard-depardieu")
+      --quiet                   build in quiet mode
+      --renderToMemory          render to memory (only useful for benchmark testing)
+  -s, --source string           filesystem path to read files relative from
+      --stepAnalysis            display memory and timing of different steps of the program
+      --templateMetrics         display metrics about template executions
+      --templateMetricsHints    calculate some improvement hints when combined with --templateMetrics
+  -t, --theme string            theme to use (located in /themes/THEMENAME/)
+      --themesDir string        filesystem path to themes directory
+      --uglyURLs                (deprecated) if true, use /filename.html instead of /filename/
+  -v, --verbose                 verbose output
+      --verboseLog              verbose logging
+  -w, --watch                   watch filesystem for changes and recreate as needed
+
+Use "hugo [command] --help" for more information about a command.
+]0;~/OneDrive/Mac/Projects/LearnOriginalDaniels-MacBook-Air:LearnOriginal danielwing$ [KDaniels-MacBook-Air:LearnOriginal danielwing$ hugo build -D
+Error: unknown command "build" for "hugo"
+Run 'hugo --help' for usage.
+]0;~/OneDrive/Mac/Projects/LearnOriginalDaniels-MacBook-Air:LearnOriginal danielwing$ hugo config
+Error: Unable to find theme Directory: /themes/hugo-theme-learn
+
+[KDaniels-MacBook-Air:LearnOriginal danielwing$ git remote add origin https://github .com/daniel-wing/learntesting.git
+fatal: not a git repository (or any of the parent directories): .git
+]0;~/OneDrive/Mac/Projects/LearnOriginalDaniels-MacBook-Air:LearnOriginal danielwing$ which git
+/usr/bin/git
+]0;~/OneDrive/Mac/Projects/LearnOriginalDaniels-MacBook-Air:LearnOriginal danielwing$ echo "# learntesting" >> README.md
+]0;~/OneDrive/Mac/Projects/LearnOriginalDaniels-MacBook-Air:LearnOriginal danielwing$ git init
+Initialized empty Git repository in /Users/danielwing/OneDrive/Mac/Projects/LearnOriginal/.git/
+]0;~/OneDrive/Mac/Projects/LearnOriginalDaniels-MacBook-Air:LearnOriginal danielwing$ git d add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+]0;~/OneDrive/Mac/Projects/LearnOriginalDaniels-MacBook-Air:LearnOriginal danielwing$ git add README.md
+]0;~/OneDrive/Mac/Projects/LearnOriginalDaniels-MacBook-Air:LearnOriginal danielwing$ git commit -m "first commit"
+[master (root-commit) 6375970] first commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README.md
+]0;~/OneDrive/Mac/Projects/LearnOriginalDaniels-MacBook-Air:LearnOriginal danielwing$ git remote add origin https://github .com/daniel-wing/learntesting.git
+]0;~/OneDrive/Mac/Projects/LearnOriginalDaniels-MacBook-Air:LearnOriginal danielwing$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 275 bytes | 275.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:[K
+remote:      https://github.com/daniel-wing/learntesting/pull/new/master[K
+remote: 
+To https://github.com/daniel-wing/learntesting.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;~/OneDrive/Mac/Projects/LearnOriginalDaniels-MacBook-Air:LearnOriginal danielwing$ pwd
+/Users/danielwing/OneDrive/Mac/Projects/LearnOriginal
+]0;~/OneDrive/Mac/Projects/LearnOriginalDaniels-MacBook-Air:LearnOriginal danielwing$ git add .
